@@ -1,0 +1,37 @@
+.page, .enter, .exit{
+    position: absolute;
+    transition: 1s;
+    width: 100vw;
+}
+
+.enter-active{
+    animation: fade-in 1s forwards;
+    z-index: 10;
+}
+
+.exit-active{
+    z-index: 0;
+    animation: fade-out 1s forwards;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out{
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}

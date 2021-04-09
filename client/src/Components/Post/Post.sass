@@ -1,0 +1,98 @@
+.post
+  display: flex
+  justify-content: center
+  margin-top: 30px
+  width: 80%
+  background-color: rgba(255, 255, 255, 0.1)
+  backdrop-filter: blur(5px)
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1)
+  border-radius: 10px
+  border: 1px solid rgba(255, 255, 255, 0.5)
+  border-right: 1px solid rgba(255, 255, 255, 0.2)
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+  position: relative
+  .close
+    background-color: white
+    border-radius: 100%
+    text-align: center
+    width: 25px
+    height: 25px
+    cursor: pointer
+    position: absolute
+    top: 5px
+    left: 10px
+    color: red
+    text-decoration: none
+  .update
+    position: absolute
+    top: 20px
+    transform: translate(-50%, -50%)
+    right: -20px
+    transition: .3s
+    border-radius: 35px
+    background-color: rgba(255, 255, 255, 0.2)
+    border: 1px solid rgba(255, 255, 255, 0.5)
+    border-right: 1px solid rgba(255, 255, 255, 0.2)
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+    outline: none
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05)
+    max-width: 100px
+    margin-bottom: 20px
+    font-weight: 600
+    background-color: #fff
+    color: #000
+    cursor: pointer
+    width: 75px
+    height: 25px
+  &__wrapper
+    padding: 20px 35px
+    min-width: 100%
+    box-sizing: border-box
+    h2
+      text-align: center
+      font-size: 42px
+    p
+      margin-bottom: 30px
+    .comments__enter
+      position: relative
+      button
+        cursor: pointer
+        position: absolute
+        right: -20px
+        bottom: -20%
+        width: 100%
+        padding: 10px 20px
+        font-size: 15px
+        letter-spacing: 1px
+        color: #fff
+        border: none
+        border-radius: 35px
+        background-color: rgba(255, 255, 255, 0.2)
+        border: 1px solid rgba(255, 255, 255, 0.5)
+        border-right: 1px solid rgba(255, 255, 255, 0.2)
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+        outline: none
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05)
+        max-width: 100px
+        margin-bottom: 20px
+        font-weight: 600
+        background-color: #fff
+        color: #000
+        margin-top: 20px
+      textarea
+        box-sizing: border-box
+        padding: 10px
+        font-size: 16px
+        color: white
+        resize: none
+        outline: white
+        background-color: rgba(255, 255, 255, 0.1)
+        backdrop-filter: blur(5px)
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        border: 1px solid rgba(255, 255, 255, 0.5)
+        border-right: 1px solid rgba(255, 255, 255, 0.2)
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+        min-width: 100%
+        min-height: 100px
+        word-break: break-word
